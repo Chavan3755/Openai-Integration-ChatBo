@@ -1,0 +1,9 @@
+openai_integration/
+│
+├── api.py              # AI router & logic
+├── page/
+│   └── ai_chat/
+│       └── ai_chat.js  # Chat UI
+│
+├── README.md
+└── hooks.py
