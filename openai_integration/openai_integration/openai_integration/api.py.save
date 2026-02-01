@@ -1,0 +1,22 @@
+if not settings.custom_enable_openai:
+    return "OpenAI not enabled"
+
+openai.api_key = settings.get_password("custom_openai_api_key")
+import frappe
+import openai
+
+@frappe.whitelist()
+def test_openai():
+    settings = frappe.get_single("System Settings")
+
+    if not settings.enable_openai:
+        return "OpenAI not enabled"
+
+    openai.api_key = settings.get_password("openai_api_key")
+
+    response = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo",
+        messages=[{"role": "user", "content": "Hello from ERPNext"}]
+    )
+
+    return response.choices[0].message["content"]

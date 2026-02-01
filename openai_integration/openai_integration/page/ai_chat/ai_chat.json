@@ -1,0 +1,6 @@
+{
+  "title": "AI Chat",
+  "icon": "comment",
+  "module": "OpenAI Integration",
+  "standard": true
+}
