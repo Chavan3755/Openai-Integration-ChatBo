@@ -1,1 +1,1 @@
-# Openai-Integration-ChatBo
+#AI-powered universal command assistant for Frappe / ERPNext
