@@ -19,3 +19,48 @@ This project adds a **ChatGPT-like interface inside ERPNext Desk**, allowing use
 
 ### 📦 Create Records via Chat
 universal command assistant for Frappe / ERPNext
+
+### 📂 Open Doctypes
+
+### 📊 Dashboards inside Chat
+
+- Uses **Chart.js**
+- Renders bar, doughnut & line charts inside chat
+
+### 🤖 AI-powered DocType Creation
+
+Creates:
+- Custom DocType
+- Fields
+- Permissions
+Automatically 🚀
+
+---
+
+## 🖥️ Chat UI (ERPNext Desk Page)
+
+- Modern chat UI
+- Auto-scroll
+- Enter to send
+- Supports charts inside messages
+
+Page Name:
+
+---
+
+## 🔐 OpenAI Configuration (IMPORTANT)
+
+❌ **Never hardcode API key**
+
+Add this in your site:
+
+### `site_config.json`
+```json
+{
+  "openai_api_key": "sk-xxxxxxxxxxxxxxxx"
+}
+👨‍💻 Author
+
+Pradip Vasram Chavan
+ERPNext / Frappe Developer
+🇮🇳 India
